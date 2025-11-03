@@ -2,31 +2,90 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>期待更新</title>
+		<title>灌藍高手 — 新手入門</title>
 		<link href="style.css" rel="stylesheet" type="text/css">
+		<script src="assets/js/error.js" defer></script>
 	</head>
 
 	<body>
 
 		<div class="header">
-			<img src="image/Banner.png" />
+			<img src="image/Banner.png" alt="站點橫幅" />
 		</div>
 
 		<div class="nav">
 			<a href="index.html">首頁</a>
-			<a href="error.html">新手入門</a>
-			<a href="error.html">球員攻略</a>
-			<a href="error.html">操作攻略</a>
+			<a href="error.html" class="active">新手入門</a>
+			<a href="players.html">球員攻略</a>
+			<a href="controls.html">操作攻略</a>
 		</div>
 
 		<div class="main">
 
-			<h1>建設中...</h1>
+			<h1>新手入門 — 建設中 (已補充內容)</h1>
+
+			<section class="guide-overview card">
+				<h2>遊戲簡介</h2>
+				<p>歡迎來到《灌藍高手》！這裡整理了新手常見的玩法要點、按鍵操作、推薦球員與入門技巧，幫助你更快上手。</p>
+			</section>
+
+			<section class="tips card">
+				<h2>入門必讀技巧</h2>
+				<ul>
+					<li>掌握傳球與運球節奏 — 按住加速時會消耗耐力，合理換傳可以創造空檔。</li>
+					<li>利用假動作吸引防守，再啟動突破，能更容易單挑上籃。</li>
+					<li>三分投射需要慣性控制，站穩節奏出手成功率較高。</li>
+				</ul>
+
+				<button id="fav-btn" class="btn">加到我的小技巧</button>
+				<p id="fav-msg" class="muted"></p>
+			</section>
+
+			<section class="players card">
+				<h2>推薦初期球員</h2>
+				<div class="player-list">
+					<div class="player">
+						<h3>張小飛 — 得分手</h3>
+						<p>優點：投射&速度；缺點：防守稍弱。適合喜歡外線與快速反擊的玩家。</p>
+					</div>
+					<div class="player">
+						<h3>林守堅 — 防守者</h3>
+						<p>優點：身高&阻攻；缺點：速度一般。適合控住內線與擋拆。</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="controls card">
+				<h2>基本操作</h2>
+				<dl>
+					<dt>移動</dt>
+					<dd>方向鍵 / WASD</dd>
+					<dt>投籃</dt>
+					<dd>J / 鼠標左鍵（按住蓄力）</dd>
+					<dt>傳球</dt>
+					<dd>K / 鼠標右鍵</dd>
+					<dt>加速</dt>
+					<dd>Shift</dd>
+					<dt>假動作</dt>
+					<dd>空白鍵</dd>
+				</dl>
+			</section>
+
+			<section class="faq card">
+				<h2>常見問題</h2>
+				<div class="accordion">
+					<button class="accordion-toggle">如何提升三分命中？</button>
+					<div class="accordion-panel">選擇擅長投射的球員、練習蓄力節奏與站位，利用掩護創造空位出手。</div>
+
+					<button class="accordion-toggle">耐力耗盡怎麼辦？</button>
+					<div class="accordion-panel">在無球時降低奔跑、使用換人策略，並在攻防間合理分配加速次數。</div>
+				</div>
+			</section>
 
 		</div>
 
 		<div class="footer">
-			<p>版權：初三戊 陳大文(40)</p>
+			<p>版權：初三戊 陳大文(40) — 灌藍高手遊戲攻略</p>
 		</div>
 
 	</body>
